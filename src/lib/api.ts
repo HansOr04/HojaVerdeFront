@@ -204,5 +204,40 @@ export const attendanceAPI = {
     return response.data;
   },
 };
+export const reportsAPI = {
+  getDailyReport: async (date: string, areaIds?: string[]) => {
+    const params = areaIds ? `?date=${date}&areaIds=${areaIds.join(',')}` : `?date=${date}`;
+    const response = await api.get(`/reports/daily${params}`);
+    return response.data;
+  },
+
+  getWeeklyReport: async (startDate: string, endDate: string, areaIds?: string[]) => {
+    const params = new URLSearchParams({
+      startDate,
+      endDate,
+      ...(areaIds && { areaIds: areaIds.join(',') })
+    });
+    const response = await api.get(`/reports/weekly?${params}`);
+    return response.data;
+  },
+
+  getMonthlyReport: async (year: number, month: number, areaIds?: string[]) => {
+    const params = new URLSearchParams({
+      year: year.toString(),
+      month: month.toString(),
+      ...(areaIds && { areaIds: areaIds.join(',') })
+    });
+    const response = await api.get(`/reports/monthly?${params}`);
+    return response.data;
+  },
+
+  exportReport: async (type: 'daily' | 'weekly' | 'monthly', params: any) => {
+    const response = await api.get(`/reports/export/${type}`, { 
+      params,
+      responseType: 'blob'
+    });
+    return response.data;
+  }
+};
 
 export default api;

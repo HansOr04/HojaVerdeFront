@@ -12,7 +12,7 @@ import {
   BarChart3, 
   Home,
   Menu,
-  X
+  X,Calculator
 } from 'lucide-react';
 import { useState } from 'react';
 
