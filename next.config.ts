@@ -1,7 +1,4 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-const nextConfig: NextConfig = {
-  // Configuración mínima para Next.js 15
-};
-
-export default nextConfig;
+module.exports = nextConfig;

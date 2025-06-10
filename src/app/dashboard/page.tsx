@@ -1,13 +1,11 @@
-// src/app/dashboard/page.tsx
 'use client';
 
-import { withAuth } from '@/contexts/AuthContext';
-import DashboardLayout from '@/components/DashboardLayout';
 import { useAuth } from '@/contexts/AuthContext';
+import DashboardLayout from '@/components/DashboardLayout';
 import Link from 'next/link';
 import { ClipboardList, Users, Building, BarChart3, TrendingUp, Clock } from 'lucide-react';
 
-function DashboardPage() {
+export default function DashboardPage() {
   const { user } = useAuth();
 
   const quickStats = [
@@ -111,48 +109,40 @@ function DashboardPage() {
               </div>
             </Link>
 
-            <Link
-              href="/dashboard/employees"
-              className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-blue-500 rounded-lg shadow hover:shadow-lg transition-shadow"
-            >
+            <div className="group relative bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
               <div>
-                <span className="rounded-lg inline-flex p-3 bg-blue-500 text-white group-hover:bg-blue-600 transition-colors">
+                <span className="rounded-lg inline-flex p-3 bg-blue-500 text-white">
                   <Users className="h-6 w-6" />
                 </span>
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-900 group-hover:text-blue-700 transition-colors">
+                <h3 className="text-lg font-medium text-gray-900">
                   Gestión de Empleados
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
                   Ver, crear y gestionar información de empleados
                 </p>
               </div>
-            </Link>
+            </div>
 
-            <Link
-              href="/dashboard/areas"
-              className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-500 rounded-lg shadow hover:shadow-lg transition-shadow"
-            >
+            <div className="group relative bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
               <div>
-                <span className="rounded-lg inline-flex p-3 bg-purple-500 text-white group-hover:bg-purple-600 transition-colors">
+                <span className="rounded-lg inline-flex p-3 bg-purple-500 text-white">
                   <Building className="h-6 w-6" />
                 </span>
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-900 group-hover:text-purple-700 transition-colors">
+                <h3 className="text-lg font-medium text-gray-900">
                   Gestión de Áreas
                 </h3>
                 <p className="mt-2 text-sm text-gray-500">
                   Administrar áreas de trabajo y configuraciones
                 </p>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </div>
     </DashboardLayout>
   );
 }
-
-export default withAuth(DashboardPage);
