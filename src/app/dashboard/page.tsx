@@ -1,11 +1,11 @@
 'use client';
 
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth, withAuth } from '@/contexts/AuthContext';
 import DashboardLayout from '@/components/DashboardLayout';
 import Link from 'next/link';
 import { ClipboardList, Users, Building, BarChart3, TrendingUp, Clock } from 'lucide-react';
 
-export default function DashboardPage() {
+function DashboardPage() {
   const { user } = useAuth();
 
   const quickStats = [
@@ -146,3 +146,5 @@ export default function DashboardPage() {
     </DashboardLayout>
   );
 }
+
+export default withAuth(DashboardPage);
