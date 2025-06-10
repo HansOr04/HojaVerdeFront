@@ -91,7 +91,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         {/* Header */}
         <div className="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
           <button
-            className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-hoja-green-500 md:hidden"
+            className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500 md:hidden"
             onClick={() => setSidebarOpen(true)}
           >
             <Menu className="h-6 w-6" />
@@ -100,7 +100,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           <div className="flex-1 px-4 flex justify-between">
             <div className="flex-1 flex items-center">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-hoja-orange-400 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-orange-400 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm">🌱</span>
                 </div>
                 <div>
@@ -146,7 +146,7 @@ function SidebarContent({ navigation }: { navigation: any[] }) {
       <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
         <div className="flex items-center flex-shrink-0 px-4 mb-6">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-hoja-orange-400 rounded-full flex items-center justify-center">
+            <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
               <span className="text-white text-xl">🌱</span>
             </div>
             <div>
@@ -165,14 +165,14 @@ function SidebarContent({ navigation }: { navigation: any[] }) {
                 href={item.href}
                 className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md transition-colors ${
                   item.current
-                    ? 'bg-hoja-green-100 text-hoja-green-900'
+                    ? 'bg-green-100 text-green-900'
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                 }`}
               >
                 <Icon
                   className={`mr-3 flex-shrink-0 h-5 w-5 ${
                     item.current
-                      ? 'text-hoja-green-500'
+                      ? 'text-green-500'
                       : 'text-gray-400 group-hover:text-gray-500'
                   }`}
                 />

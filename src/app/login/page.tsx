@@ -116,9 +116,9 @@ export default function LoginPage() {
       />
       
       {/* Elementos decorativos */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-hoja-green-500 rounded-full opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-48 h-48 bg-hoja-orange-500 rounded-full opacity-5 animate-bounce" style={{ animationDuration: '3s' }}></div>
-      <div className="absolute top-1/2 left-10 w-16 h-16 bg-hoja-green-400 rounded-full opacity-20 animate-ping" style={{ animationDuration: '2s' }}></div>
+      <div className="absolute top-20 left-20 w-32 h-32 bg-green-500 rounded-full opacity-10 animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-48 h-48 bg-orange-500 rounded-full opacity-5 animate-bounce" style={{ animationDuration: '3s' }}></div>
+      <div className="absolute top-1/2 left-10 w-16 h-16 bg-green-400 rounded-full opacity-20 animate-ping" style={{ animationDuration: '2s' }}></div>
 
       <div className="relative z-10 min-h-screen flex">
         {/* Panel izquierdo - Información */}
@@ -126,7 +126,7 @@ export default function LoginPage() {
           <div className="max-w-md">
             {/* Logo y branding */}
             <div className="flex items-center space-x-4 mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-hoja-green-400 to-hoja-green-600 rounded-2xl flex items-center justify-center shadow-2xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center shadow-2xl">
                 <Leaf className="text-white" size={32} />
               </div>
               <div>
@@ -141,15 +141,15 @@ export default function LoginPage() {
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Plataforma avanzada para la gestión eficiente de asistencia agrícola. 
-              Diseñada para manejar hasta <span className="text-hoja-green-400 font-semibold">615 empleados</span> con 
+              Diseñada para manejar hasta <span className="text-green-400 font-semibold">615 empleados</span> con 
               registro masivo optimizado.
             </p>
 
             {/* Características destacadas */}
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-hoja-green-500/20 rounded-xl flex items-center justify-center">
-                  <Zap className="text-hoja-green-400" size={20} />
+                <div className="w-10 h-10 bg-green-500/20 rounded-xl flex items-center justify-center">
+                  <Zap className="text-green-400" size={20} />
                 </div>
                 <div>
                   <h3 className="font-semibold">Registro Masivo</h3>
@@ -185,7 +185,7 @@ export default function LoginPage() {
           <div className="w-full max-w-md">
             {/* Header móvil */}
             <div className="lg:hidden text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-hoja-green-400 to-hoja-green-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-2xl">
+              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-2xl">
                 <Leaf className="text-white" size={32} />
               </div>
               <h1 className="text-2xl font-serif font-bold text-white mb-2">Hoja Verde</h1>
@@ -219,7 +219,7 @@ export default function LoginPage() {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-hoja-green-500 focus:border-transparent transition-all backdrop-blur-sm"
+                      className="w-full pl-12 pr-4 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all backdrop-blur-sm"
                       placeholder="tu@email.com"
                       required
                       disabled={isLoading}
@@ -237,7 +237,7 @@ export default function LoginPage() {
                       type={showPassword ? 'text' : 'password'}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      className="w-full pl-12 pr-12 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-hoja-green-500 focus:border-transparent transition-all backdrop-blur-sm"
+                      className="w-full pl-12 pr-12 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all backdrop-blur-sm"
                       placeholder="••••••••"
                       required
                       disabled={isLoading}
@@ -256,7 +256,7 @@ export default function LoginPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-gradient-to-r from-hoja-green-500 to-hoja-green-600 hover:from-hoja-green-600 hover:to-hoja-green-700 disabled:from-gray-500 disabled:to-gray-600 text-white font-semibold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-xl hover:shadow-2xl transform hover:scale-[1.02] disabled:transform-none"
+                  className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-500 disabled:to-gray-600 text-white font-semibold py-4 px-6 rounded-2xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-xl hover:shadow-2xl transform hover:scale-[1.02] disabled:transform-none"
                 >
                   {isLoading ? (
                     <>
@@ -302,7 +302,7 @@ export default function LoginPage() {
                       onClick={() => fillDemo(cred)}
                       disabled={isLoading}
                       className={`w-full p-4 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all text-left group ${
-                        isSelected ? 'ring-2 ring-hoja-green-500 bg-hoja-green-500/10' : ''
+                        isSelected ? 'ring-2 ring-green-500 bg-green-500/10' : ''
                       }`}
                     >
                       <div className="flex items-center space-x-4">
@@ -312,7 +312,7 @@ export default function LoginPage() {
                         <div className="flex-1">
                           <div className="flex items-center space-x-2 mb-1">
                             <h4 className="text-white font-medium">{cred.role}</h4>
-                            {isSelected && <CheckCircle className="text-hoja-green-400" size={16} />}
+                            {isSelected && <CheckCircle className="text-green-400" size={16} />}
                           </div>
                           <p className="text-gray-400 text-sm mb-2">{cred.description}</p>
                           <div className="flex flex-wrap gap-1">

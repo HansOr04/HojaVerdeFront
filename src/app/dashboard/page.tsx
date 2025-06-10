@@ -60,17 +60,17 @@ function DashboardPage() {
           </div>
 
           {/* Acción crítica para María */}
-          <div className="bg-gradient-to-r from-hoja-green-50 to-hoja-orange-50 border border-hoja-green-200 rounded-lg p-6 mb-8">
+          <div className="bg-gradient-to-r from-green-50 to-orange-50 border border-green-200 rounded-lg p-6 mb-8">
             <div className="flex items-center justify-between">
               <div>
-                <h2 className="text-lg font-semibold text-hoja-green-800 mb-2">
+                <h2 className="text-lg font-semibold text-green-800 mb-2">
                   🚀 Registro Masivo de Asistencia
                 </h2>
-                <p className="text-hoja-green-700 mb-4">
+                <p className="text-green-700 mb-4">
                   Registra la asistencia de los 615 empleados de manera eficiente y rápida.
                   Sistema optimizado para múltiples áreas con valores por defecto automáticos.
                 </p>
-                <div className="flex items-center gap-4 text-sm text-hoja-green-600">
+                <div className="flex items-center gap-4 text-sm text-green-600">
                   <span>✅ Selección múltiple de áreas</span>
                   <span>✅ Valores por defecto automáticos</span>
                   <span>✅ Modificación individual</span>
@@ -79,7 +79,7 @@ function DashboardPage() {
               </div>
               <Link
                 href="/dashboard/attendance"
-                className="bg-hoja-green-600 hover:bg-hoja-green-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-colors shadow-lg hover:shadow-xl"
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-colors shadow-lg hover:shadow-xl"
               >
                 <ClipboardList size={20} />
                 Iniciar Registro
@@ -91,15 +91,15 @@ function DashboardPage() {
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <Link
               href="/dashboard/attendance"
-              className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-hoja-green-500 rounded-lg shadow hover:shadow-lg transition-shadow"
+              className="group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500 rounded-lg shadow hover:shadow-lg transition-shadow"
             >
               <div>
-                <span className="rounded-lg inline-flex p-3 bg-hoja-green-500 text-white group-hover:bg-hoja-green-600 transition-colors">
+                <span className="rounded-lg inline-flex p-3 bg-green-500 text-white group-hover:bg-green-600 transition-colors">
                   <ClipboardList className="h-6 w-6" />
                 </span>
               </div>
               <div className="mt-4">
-                <h3 className="text-lg font-medium text-gray-900 group-hover:text-hoja-green-700 transition-colors">
+                <h3 className="text-lg font-medium text-gray-900 group-hover:text-green-700 transition-colors">
                   Registro de Asistencia
                   <span className="ml-2 text-xs bg-red-100 text-red-800 px-2 py-1 rounded-full">
                     CRÍTICO
