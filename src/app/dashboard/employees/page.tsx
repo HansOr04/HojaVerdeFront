@@ -345,7 +345,7 @@ function EmployeesPage() {
                                 {employee.baseSalary && (
                                   <div className="flex items-center text-sm text-gray-500">
                                     <DollarSign className="flex-shrink-0 mr-1.5 h-4 w-4" />
-                                    <span>${employee.baseSalary.toFixed(2)}</span>
+                                    <span>${employee.baseSalary ? Number(employee.baseSalary).toFixed(2) : '0.00'}</span>
                                   </div>
                                 )}
                               </div>
