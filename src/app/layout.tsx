@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import { AuthProvider } from "@/contexts/AuthContext";
+import { AuthProvider } from "../contexts/AuthContext";
 import "./globals.css";
 
 const inter = Inter({
