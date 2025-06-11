@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hoja-green-50: #f0f9f0;
+  --hoja-green-100: #dcf2dc;
+  --hoja-green-200: #bce5bc;
+  --hoja-green-300: #8fd18f;
+  --hoja-green-400: #5bb55b;
+  --hoja-green-500: #389738;
+  --hoja-green-600: #2a7a2a;
+  --hoja-green-700: #236223;
+  --hoja-green-800: #1f4f1f;
+  --hoja-green-900: #1a421a;
+  
+  --hoja-orange-50: #fef7f0;
+  --hoja-orange-100: #fdeee0;
+  --hoja-orange-200: #f9d5bf;
+  --hoja-orange-300: #f4b993;
+  --hoja-orange-400: #ed8f5e;
+  --hoja-orange-500: #e67332;
+  --hoja-orange-600: #d75b28;
+  --hoja-orange-700: #b34925;
+  --hoja-orange-800: #8f3c25;
+  --hoja-orange-900: #743223;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
