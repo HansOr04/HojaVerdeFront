@@ -1,7 +1,7 @@
 'use client';
 
-import { useAuth, withAuth } from '@/contexts/AuthContext';
-import DashboardLayout from '@/components/DashboardLayout';
+import { useAuth, withAuth } from '../../contexts/AuthContext';
+import DashboardLayout from '../../components/DashboardLayout';
 import Link from 'next/link';
 import { ClipboardList, Users, Building, BarChart3, TrendingUp, Clock } from 'lucide-react';
 

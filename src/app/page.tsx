@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from '../../src/contexts/AuthContext';
 import LoginPage from './login/page';
 
 export default function HomePage() {

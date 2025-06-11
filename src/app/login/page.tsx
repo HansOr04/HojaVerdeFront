@@ -18,7 +18,7 @@ import {
   ArrowLeft,
   CheckCircle
 } from 'lucide-react';
-import { useAuth } from '@/contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');

@@ -2,9 +2,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { withAuth } from '@/contexts/AuthContext';
-import { attendanceAPI, areasAPI } from '@/lib/api';
-import DashboardLayout from '@/components/DashboardLayout';
+import { withAuth } from '../../../contexts/AuthContext';
+import { attendanceAPI, areasAPI } from '../../../lib/api';
+import DashboardLayout from '../../../components/DashboardLayout';
 import { 
   BarChart3, 
   Calendar, 
